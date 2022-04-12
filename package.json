@@ -2,7 +2,7 @@
   "name": "todo-sequelize",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "appㄔㄩㄛ.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon app.js"
@@ -19,7 +19,9 @@
     "mysql2": "^2.3.3",
     "passport": "^0.5.2",
     "passport-local": "^1.0.0",
-    "sequelize": "^6.17.0",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
     "sequelize-cli": "^6.4.1"
   }
 }
