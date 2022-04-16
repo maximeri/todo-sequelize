@@ -23,7 +23,7 @@ router.get('/:id', (req, res) => {
   const UserId = req.user.id
   const id = req.params.id
   return Todo.findOne({ where: { id, UserId } })
-    .then(todo => res.render('detail', { todo: todo.toJSON() }))
+    .then(todo => res.render('detail', { todo:todo.toJSON }))
     .catch(error => console.log(error))
 })
 
@@ -32,7 +32,7 @@ router.get('/:id/edit', (req, res) => {
   const UserId = req.user.id
   const id = req.params.id
   return Todo.findOne({ where: { id, UserId } })
-    .then(todo => res.render('edit', { todo: todo.toJSON() }))
+    .then(todo => res.render('edit', { todo: todo.get() }))
     .catch(error => console.log(error))
 })
 
